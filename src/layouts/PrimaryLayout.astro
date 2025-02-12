@@ -1,5 +1,6 @@
 ---
 import '../style.css';
+import Header from '../components/Header.astro';
 const {title = "FEM Blog with CMS"} = Astro.props;
 ---
 
@@ -12,6 +13,7 @@ const {title = "FEM Blog with CMS"} = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <slot></slot>
+    <Header />
+    <slot>
   </body>
 </html>
